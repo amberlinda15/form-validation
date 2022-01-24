@@ -4,12 +4,39 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet"> 
-        <link href="./res/index.css"/>
+        <link href="./res/index.css" rel="stylesheet"/>
     </head>
     <body>
-        <div class="main_container">
-            <div></div>
+        <div class="main_container flex_box">
+            <div class="left_cont">
+                <h1>ADD MEMBERS</h1>
+            </div>
+            <div class="right_cont">
+                <form class="member_form">
+                    <div class="input_cont empty">
+                        <label>Your name</label>
+                        <input type="text" name="yourname" id="your-name"/>
+                        <p class="error hide">error</p>
+                    </div>
+                    <div class="input_cont empty">
+                        <label>Email</label>
+                        <input type="email" name="email" id="email"/>
+                        <p class="error hide">error</p>
+                    </div>
+                    <div class="input_cont empty">
+                        <label>Phone number</label>
+                        <input type="number" name="phonenumber" id="phonenumber"/>
+                        <p class="error hide">error</p>
+                    </div>
+                    <div class="input_cont empty">
+                        <label>Gender</label>
+                        <input type="text"/>
+                        <p class="error hide">error</p>
+                    </div>
+                </form>
+            </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="./res/script.js"></script>
     </body>
 </html>
