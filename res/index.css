@@ -33,7 +33,10 @@ html,body{
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+.left_cont > h1{
+    text-align: center;
 }
 
 .right_cont{
@@ -68,6 +71,18 @@ html,body{
     left: 5%;
 }
 
+.eye_icon{
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.eye_icon:hover{
+    transform: scale(1.2);
+}
+
 .filled > label{
     top: -17%;
     left: 5%;
@@ -84,3 +99,23 @@ html,body{
 .hide{
     opacity: 0;
 }
+
+.submit_button{
+    padding: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #B958A5;
+    border: 1px solid #B958A5;
+    border-radius: 50px;
+    font-weight: 400;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+    font-size: 85%;
+}
+
+.submit_button:hover{
+    transform: scale(1.06);
+}
+
