@@ -24,6 +24,20 @@ $('input').blur(function(){
     }
   })
 
+  document.getElementById("last-name").addEventListener("keypress",function(event){
+    const keys = /[0-9]/;
+    const label = event.target.parentNode.children[2];
+    console.log(label)
+    if(event.key.match(keys)){
+      label.classList.remove("hide")
+      label.innerText = "no digits allowed"
+      event.preventDefault()
+    }else{
+      label.classList.add("hide")
+    }
+  })
+
+
   document.getElementById("phonenumber").addEventListener("keypress",function(event){
     const regex = /[a-zA-Z]/;
     const regex2 = /^[0-9]{10}$/;

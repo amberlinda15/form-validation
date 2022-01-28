@@ -14,8 +14,13 @@
             <div class="right_cont">
                 <form class="member_form" onsubmit="validateFormHandler()" action="./index.html" id="add_member_form">
                     <div class="input_cont empty">
-                        <label>Your name</label>
+                        <label>First name</label>
                         <input type="text" name="yourname" id="your-name" required/>
+                        <p class="error hide">error</p>
+                    </div>
+                    <div class="input_cont empty">
+                        <label>Last name</label>
+                        <input type="text" name="lastname" id="last-name" required/>
                         <p class="error hide">error</p>
                     </div>
                     <div class="input_cont empty">
